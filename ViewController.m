@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 
-@end 
+@end
 
 @implementation ViewController
 
@@ -19,6 +19,10 @@
     self.view.backgroundColor = [UIColor redColor];
     
     self.view.backgroundColor = [UIColor blackColor];
+    
+    UIView *view = [[UIView alloc]initWithFrame:self.view.frame];
+    view.backgroundColor = [UIColor cyanColor];
+    [self.view addSubview:view]
     // Do any additional setup after loading the view, typically from a nib.
 }
 
